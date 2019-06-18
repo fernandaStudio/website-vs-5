@@ -1,0 +1,127 @@
+/*** MAIN ***/
+body { 
+	font-family: 'Nunito Sans',Arial,sans-serif; 
+	color:black;
+	text-align: center;
+}
+ul {list-style-type:none;margin:0;padding:0;}
+li {padding-bottom: .3em;}
+
+h1,h2,h3,h4,p {margin:0;}
+h1 {font-size: 2.15em;}
+h2 {font-size: 1.45em;line-height: 1.5em;}
+p {font-size:1.15em;}
+strong {font-weight: 800;}
+
+a:link,a:visited,a:active {text-decoration:none;color:black;}
+a:hover {
+	color:white; 
+	transition:  color 0.5s ease; 
+	-webkit-transition:color 0.5s ease; 
+	background-color: black;
+	border-radius:.14em;
+	padding:.3em .5em; 
+}
+
+.logo{
+	background:url('./assets/Logo.jpg')no-repeat center top;
+	background-size: contain;
+	padding: 5.75em;
+}
+
+.header h1 {padding-top: 1em;}
+.header h2 {padding-top: .25em;}
+.row .header {padding-top: 2.25em;}
+.contact, .social, .resume {padding-left: 0;}
+.spacer { padding: 3.5em 0;}
+.social {padding-top:5em;padding-bottom:5em;}
+
+.insert:after {
+	font-weight: normal; 
+	content:"\00a0\00a0\007C\00a0\00a0";
+}
+
+/*** ORANGE ***/
+#orng {background: #f44336;height:auto;padding-bottom: 400px;}
+/*** GREY ***/
+#grey {background: #efefef;height: auto;padding-bottom: 200px;}
+
+
+/*** MEDIA QUERIES ***/
+@media (max-width: 300px){
+	p {font-size:1em;}
+	.header h1 {font-size: 1.6em;}
+	.header h2 {font-size: 1.1em;}
+	.logo{
+	background:url('./assets/Logo.jpg')no-repeat center top;
+	background-size: contain;
+	padding: 5em;
+}
+	.space {padding: 2em;}
+}
+@media (min-width: 768px){
+	body {text-align: left;}
+	.header h1 {font-size: 2.3em;}
+	.header h2 {font-size: 1.65em;line-height: 1em;padding-left: .125em;padding-top: .35em;}
+	p {font-size: 1.3em;}
+	.logo {
+	background:url('./assets/Logo.jpg')no-repeat left top;
+	background-size:contain;
+	padding: 5.75em;
+	}
+	.row .header, .row .information {padding-top: 6em; padding-left: 7.15em;}
+	.co-name{padding:0;}
+	.spacer { padding: 3em 0;}
+	.social {padding-top:5.5em;padding-bottom:5.5em;}
+	
+}
+@media (min-width: 992px){
+	.header h1 {font-size: 2.15em; padding-top: .75em;}
+	.header h2 {font-size: 1.43em;padding-top: .5em;}
+	.row .header, .row .information {padding-top: 3.6em; padding-left: 6.5em;}
+	.logo {
+	background:url('./assets/Logo.jpg')no-repeat left top;
+	background-size:contain;
+	padding: 5em;
+	}
+	.contact {padding:0;}
+	.spacer {padding: 5em;}
+	.social {padding: 1.8em 3em 0;}
+	.resume {padding: 3.7em 0 0 3em;}
+}
+@media (min-width:1200px){
+	.header h1 {font-size: 3.5em; padding-top: .75em;}
+	.header h2 {font-size: 2.5em; padding-top: .5em;}
+	.row .header, .row .information {padding-top: 8em;padding-left: 8em;}
+	.logo {
+	background:url('./assets/Logo.jpg')no-repeat left top;
+	background-size:contain;
+	padding: 6em;
+	}
+	.spacer {padding: 3.5em;}
+}
+@media (min-width:1440px){
+	p {font-size: 1.5em;}
+	.row .header, .row .information {padding-top: 6.5em;padding-left: 6.5em;}
+	.spacer {padding: 6.5em;}
+	.social {padding: 2.3em 3em 0;}
+	.resume {padding: 4.6em 0 0 3em;}
+}
+@media (min-width:1920px){
+	.header h1 {font-size: 4.3em; padding-top: .75em;}
+	.header h2 {font-size: 3.1em; padding-top: .5em;}
+	.row .header, .row .information {padding-top: 7.5em;padding-left: 7.5em;}
+	.logo {
+	background:url('./assets/Logo.jpg')no-repeat left top;
+	background-size:contain;
+	padding: 7.5em;
+	}
+	.spacer {padding: 8em;}
+	.social {padding: 2.5em 3em 0;}
+	.resume {padding: 4.8em 0 0 3em;}
+}
+@media (min-width: 2560px){
+	.container-fluid {width: 60%;}
+	.row .header, .row .information {padding-top: 10em;padding-left: 10em;}
+}
+	
